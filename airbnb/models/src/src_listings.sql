@@ -1,3 +1,9 @@
+{{
+  config(
+    materialized = 'ephemeral'
+    )
+}}
+
 with raw_listings as (select * from raw.raw_listings)
 SELECT
     id AS listing_id,

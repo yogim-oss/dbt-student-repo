@@ -1,3 +1,9 @@
+{{
+  config(
+    materialized = 'ephemeral'
+    )
+}}
+
 with raw_reviews as (select * from raw.raw_reviews)
  select 
  LISTING_ID, 
